@@ -2,14 +2,14 @@
 
 import { createalyAuth } from "@aly.dev/cloud-auth-js";
 import { supabase } from "../supabase/client";
-const alyAuth = createalyAuth();
+const lovableAuth = createalyAuth();
 
 type SignInOptions = {
   redirect_uri?: string;
   extraParams?: Record<string, string>;
 };
 
-export const aly = {
+export const lovable = {
   auth: {
     signInWithOAuth: async (
       provider: "google" | "apple" | "microsoft" | "aly",
