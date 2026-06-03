@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { StandupForm } from "@/components/standup-form";
 import { ActivityFeed } from "@/components/activity-feed";
+import { WeatherWidget } from "@/components/weather-widget";
 
 export const Route = createFileRoute("/_authenticated/feed")({
   head: () => ({ meta: [{ title: "Feed — Standup" }] }),
@@ -14,7 +15,8 @@ function FeedPage() {
 
   return (
     <div className="grid lg:grid-cols-[1fr_1.2fr] gap-8">
-      <div>
+      <div className="space-y-6">
+        <WeatherWidget />
         <StandupForm userId={user.id} onSaved={() => setRefreshKey((k) => k + 1)} />
       </div>
       <div>
