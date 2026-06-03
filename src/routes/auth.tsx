@@ -65,7 +65,7 @@ function AuthPage() {
 
   const handleGoogle = async () => {
     setLoading(true);
-    const result = await aly.auth.signInWithOAuth("google", {
+    const result = await lovable.auth.signInWithOAuth("google", {
       redirect_uri: window.location.origin,
     });
     if (result.error) {
