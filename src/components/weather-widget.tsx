@@ -18,7 +18,7 @@ interface WeatherData {
   windSpeed: number;
 }
 
-const CITY = { name: "London", lat: 51.5074, lon: -0.1278 };
+const CITY = { name: "Nairobi", lat: -1.2921, lon: 36.8219 };
 
 function getWeatherIcon(code: number, size = 28) {
   // WMO Weather interpretation codes (WW)
