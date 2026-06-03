@@ -15,7 +15,8 @@ function FeedPage() {
 
   return (
     <div className="grid lg:grid-cols-[1fr_1.2fr] gap-8">
-      <div>
+      <div className="space-y-6">
+        <WeatherWidget />
         <StandupForm userId={user.id} onSaved={() => setRefreshKey((k) => k + 1)} />
       </div>
       <div>
