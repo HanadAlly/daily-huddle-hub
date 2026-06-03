@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { StandupForm } from "@/components/standup-form";
 import { ActivityFeed } from "@/components/activity-feed";
+import { WeatherWidget } from "@/components/weather-widget";
 
 export const Route = createFileRoute("/_authenticated/feed")({
   head: () => ({ meta: [{ title: "Feed — Standup" }] }),
