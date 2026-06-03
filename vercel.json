@@ -1,4 +1,3 @@
 {
-  "version": 2,
-  "framework": "vite"
+  "routes": [{ "src": "/(.*)", "dest": "./" }]
 }
