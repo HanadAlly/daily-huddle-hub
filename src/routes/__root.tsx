@@ -78,14 +78,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "aly App" },
-      { name: "description", content: "aly Generated Project" },
+      { title: "StandUp Sync" },
+      { name: "description", content: "Keep teams aligned with daily status updates." },
       { name: "author", content: "aly" },
-      { property: "og:title", content: "aly App" },
-      { property: "og:description", content: "aly Generated Project" },
+      { property: "og:title", content: "StandUp Sync" },
+      { property: "og:description", content: "Keep teams aligned with daily status updates." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@aly" },
+      { name: "twitter:title", content: "StandUp Sync" },
+      { name: "twitter:description", content: "Keep teams aligned with daily status updates." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/aefecec8-4204-460c-b1d3-f761fa1c5f70/id-preview-b95a31d9--e94c8152-337f-480d-94bb-3d6c0e826084.lovable.app-1780500874533.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/aefecec8-4204-460c-b1d3-f761fa1c5f70/id-preview-b95a31d9--e94c8152-337f-480d-94bb-3d6c0e826084.lovable.app-1780500874533.png" },
     ],
     links: [
       {
